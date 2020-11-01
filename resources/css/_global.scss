@@ -1,0 +1,56 @@
+/*
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+* {
+    box-sizing: border-box;
+  }  
+
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: #283646;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+ } 
+
+ 
+ h1 {
+     font-size: 2rem;
+     padding: 5px;
+ }
+
+ h2 {
+    font-size: 1.8rem;
+    padding: 0px;
+    padding-top: 20px;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #283646;
+    opacity: 0.1;
+ }
+
+ h4 {
+    display: inline; 
+    margin: 0px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0.9;
+ }
+
+ h5 {
+    display: inline; 
+    margin: 0;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+ }
+
+ .code {
+     font-family: 'PT Mono';
+     background-color: #dddddd;
+     font-size: 0.9rem;
+ }
