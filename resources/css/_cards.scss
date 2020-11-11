@@ -1,0 +1,76 @@
+/*
+======================================== */
+
+/* 1. Card Styles
+======================================== */
+
+
+$clr1: #A01C32;
+$clr2: #E9F7F9;
+$clr3: #A5DCE4;
+
+@mixin topBox ($hgt, $tlRad, $trRad) {
+    height: $hgt;
+    border-top-left-radius: $tlRad;
+    border-top-right-radius: $trRad;
+    box-shadow: 3px 5px 5px #000  
+}
+
+@mixin botBox ($hgt, $tlRad, $trRad) {
+    display: inline-grid;
+    grid-template-columns: 50px 120px;
+    grid-gap: 5px;      
+    height: $hgt;
+    background-color: #fff;
+    border-bottom-left-radius: $tlRad;
+    border-bottom-right-radius: $trRad;
+    box-shadow: 3px 5px 5px #000;
+    padding: 15px; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 340px;
+    height: 300px;
+    margin: 20px;    
+
+    //Top row - colours
+    &__r1Top {
+        @include topBox(200px, 10px ,10px)      
+        
+        &-bgClr1 {
+            background-color: $clr1;
+        }
+
+        &-bgClr2 {
+            background-color: $clr2;
+        }
+
+        &-bgClr3 {
+            background-color: $clr3;
+        }
+    }
+
+    &__r1Bot {   
+        @include botBox(100px, 10px ,10px)
+    }   
+
+    //Bottom row - type
+
+    &__r2Top {
+        @include topBox(200px, 10px ,10px);
+        background-color: #FCF0F2;        
+    }
+
+    &__r2Bot {   
+        @include botBox(100px, 10px ,10px)
+        grid-template-rows: 1.1rem 1.1rem 1.1rem;
+
+       &-wide {
+        grid-column: 1 / 3
+       }
+   }
+
+}
